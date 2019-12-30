@@ -22,6 +22,31 @@
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
     <style>
+        .btn:after {
+            -webkit-transform: scale(0, 1);
+            -ms-transform: scale(0, 1);
+            -o-transform: scale(0, 1);
+            transform: scale(0, 1);
+            -webkit-transform-origin: center center 0px;
+            -moz-transform-origin: center center 0px;
+            -ms-transform-origin: center center 0px;
+            transform-origin: center center 0px;
+            -webkit-transition: all 0.15s ease-out 0s;
+            -o-transition: all 0.15s ease-out 0s;
+            transition: all 0.15s ease-out 0s;
+            border-bottom: 2px solid;
+            content: "";
+            display: block;
+            height: 1px;
+            left: -1px;
+            margin-top: -3px;
+            position: relative;
+            top: 3px;
+            width: 100%;
+        }
+
+
+
         body {
             height: 100vh;
             background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -3242,10 +3267,11 @@
 </head>
 
 <body>
-    
+
     <section class="menu cid-rKP7NiUsSQ" once="menu" id="menu1-b">
         <nav
-            class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent"><div class="snow"></div>
+            class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+            <div class="snow"></div>
             <div class="snow"></div>
             <div class="snow"></div>
             <div class="snow"></div>
@@ -3465,11 +3491,10 @@
 
                 </div>
             </div>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="https://mobirise.co"
-                            aria-expanded="false">
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="" aria-expanded="false">
                         </a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="page1.html"
                             aria-expanded="false">關於漫威之父</a></li>
@@ -3477,7 +3502,9 @@
                             aria-expanded="false">漫威角色介紹</a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="page2.html"
                             aria-expanded="false">
-                            漫威宇宙時間軸</a></li>
+                            漫威宇宙時間軸
+                        </a></li>                  
+
                 </ul>
 
             </div>
@@ -3487,8 +3514,6 @@
 
     <section class="cid-qTkA127IK8 mbr-fullscreen" data-bg-video="https://www.youtube.com/watch?v=0jNvJU52LvU"
         id="header2-1">
-
-
 
         <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(35, 35, 35);"></div>
 
