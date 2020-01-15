@@ -22,30 +22,90 @@
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
     <style>
-        .btn:after {
-            -webkit-transform: scale(0, 1);
-            -ms-transform: scale(0, 1);
-            -o-transform: scale(0, 1);
-            transform: scale(0, 1);
-            -webkit-transform-origin: center center 0px;
-            -moz-transform-origin: center center 0px;
-            -ms-transform-origin: center center 0px;
-            transform-origin: center center 0px;
-            -webkit-transition: all 0.15s ease-out 0s;
-            -o-transition: all 0.15s ease-out 0s;
-            transition: all 0.15s ease-out 0s;
-            border-bottom: 2px solid;
-            content: "";
-            display: block;
-            height: 1px;
-            left: -1px;
-            margin-top: -3px;
-            position: relative;
-            top: 3px;
-            width: 100%;
+        .button {
+            color: white;
+            margin: .4em;
+            padding: 1em;
+            cursor: pointer;
+            /* background: #ececec; */
+            text-decoration: none;
+            font-size: large;
         }
 
+        @keyframes hover {
+            50% {
+                transform: translateY(-3px);
+            }
 
+            100% {
+                transform: translateY(-6px);
+            }
+        }
+
+        @keyframes hover-shadow {
+            0% {
+                transform: translateY(6px);
+                opacity: .4;
+            }
+
+            50% {
+                transform: translateY(3px);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(6px);
+                opacity: .4;
+            }
+        }
+
+        .hover-shadow {
+            display: inline-block;
+            position: relative;
+            transition-duration: 0.3s;
+            transition-property: transform;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+        }
+
+        .hover-shadow:before {
+            pointer-events: none;
+            position: absolute;
+            z-index: -1;
+            content: '';
+            top: 100%;
+            left: 5%;
+            height: 10px;
+            width: 90%;
+            opacity: 0;
+            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+            /* W3C */
+            transition-duration: 0.3s;
+            transition-property: transform opacity;
+        }
+
+        .hover-shadow:hover {
+            transform: translateY(-6px);
+            animation-name: hover;
+            animation-duration: 1.5s;
+            animation-delay: 0.3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .hover-shadow:hover:before {
+            opacity: .4;
+            transform: translateY(6px);
+            animation-name: hover-shadow;
+            animation-duration: 1.5s;
+            animation-delay: .3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
 
         body {
             height: 100vh;
@@ -3261,6 +3321,24 @@
                 transform: translate(67.1746vw, 100vh) scale(0.4976);
             }
         }
+
+
+        @media (max-width: 1023px) {
+            .cid-rKP7NiUsSQ img {
+                height: 2rem !important;
+
+            }
+        }
+
+        .mbr-fonts-style {
+            text-shadow: 0.1em 0.1em 0.2em black;
+        }
+
+        @media (max-width: 1023px) {
+            .cid-rKP7NiUsSQ img {
+                height: 2.8rem !important;
+            }
+        }
     </style>
 
 
@@ -3269,208 +3347,10 @@
 <body>
 
     <section class="menu cid-rKP7NiUsSQ" once="menu" id="menu1-b">
+
         <nav
             class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
-            <div class="snow"></div>
+
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -3482,10 +3362,210 @@
                 </div>
             </button>
             <div class="menu-logo">
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
+                <div class="snow"></div>
                 <div class="navbar-brand">
                     <span class="navbar-logo">
                         <a href="index.html">
-                            <img src="assets/images/marvel-logo-red-232x93.png" alt="" title="" style="height: 3.8rem;">
+                            <img src="assets/images/marvel-logo-red-232x93.png" alt="" title="">
                         </a>
                     </span>
 
@@ -3494,19 +3574,18 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="" aria-expanded="false">
+                    <!-- <li class="nav-item"><a class="nav-link link text-white display-4" href="" aria-expanded="false">
+                        </a></li> -->
+                    <li class="nav-item"><a rel="hover-shadow" class="button hover-shadow" style="color: white;"
+                            href="page1.html" aria-expanded="false">關於漫威之父
                         </a></li>
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="page1.html"
-                            aria-expanded="false">關於漫威之父</a></li>
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="page3.html"
-                            aria-expanded="false">漫威角色介紹</a></li>
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="page2.html"
-                            aria-expanded="false">
-                            漫威宇宙時間軸
-                        </a></li>                  
-
+                    <li class="nav-item"><a rel="hover-shadow" class="button hover-shadow" style="color: white;"
+                            href="page3.html" aria-expanded="false">漫威角色介紹
+                        </a></li>
+                    <li class="nav-item"><a rel="hover-shadow" class="button hover-shadow" style="color: white;"
+                            href="page2.html" aria-expanded="false">漫威宇宙時間軸
+                        </a></li>
                 </ul>
-
             </div>
         </nav>
     </section>
